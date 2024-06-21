@@ -1,5 +1,4 @@
 import 'package:fast_app_base/common/common.dart';
-import 'package:fast_app_base/common/widget/w_tap.dart';
 import 'package:fast_app_base/screen/main/tab/stock/search/s_search_stock.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tabs/f_my_stock.dart';
 import 'package:fast_app_base/screen/main/tab/stock/tabs/f_today_discovery.dart';
@@ -44,7 +43,7 @@ class _StockFragmentState extends State<StockFragment>
               ImageButton(
                 onTap: () {
                   context.showSnackbar('검색');
-                  Nav.push(SearchStockScreen());
+                  Nav.push(const SearchStockScreen());
                 },
                 imagePath: 'assets/image/icon/stock_search.png',
               ),
@@ -60,7 +59,7 @@ class _StockFragmentState extends State<StockFragment>
                 onTap: () {
                   // context.showSnackbar('세팅');
                   Nav.push(
-                    SettingScreen(),
+                    const SettingScreen(),
                   );
                 },
                 imagePath: 'assets/image/icon/stock_settings.png',
@@ -73,8 +72,8 @@ class _StockFragmentState extends State<StockFragment>
                 title.pSymmetric(h: 20),
                 tabBar,
                 currentIndex == 0
-                    ? MyStockFragment()
-                    : TodayDiscoveryFragment(),
+                    ? const MyStockFragment()
+                    : const TodayDiscoveryFragment(),
               ],
             ),
           ),
@@ -130,7 +129,7 @@ class _StockFragmentState extends State<StockFragment>
         ],
       );
 
-  Widget get myAccount => Placeholder();
+  Widget get myAccount => const Placeholder();
 
-  Widget get myStocks => Placeholder();
+  Widget get myStocks => const Placeholder();
 }
