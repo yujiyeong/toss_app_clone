@@ -52,7 +52,7 @@ class _TossAppBarState extends State<TossAppBar> {
                       child: Container(
                         width: 6,
                         height: 6,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           color: Colors.red,
                         ),
@@ -60,7 +60,9 @@ class _TossAppBarState extends State<TossAppBar> {
                     ),
                   ),
               ],
-            ),
+            )
+                .animate()
+                .shake(duration: 2000.ms, hz: 4),
           ),
           const Width(10),
         ],

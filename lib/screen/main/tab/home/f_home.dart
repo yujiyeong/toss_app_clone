@@ -1,4 +1,3 @@
-import 'package:fast_app_base/common/cli_common.dart';
 import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/common/widget/w_big_button.dart';
 import 'package:fast_app_base/common/widget/w_rounded_container.dart';
@@ -6,7 +5,6 @@ import 'package:fast_app_base/screen/dialog/d_message.dart';
 import 'package:fast_app_base/screen/main/tab/home/bank_account_dummy.dart';
 import 'package:fast_app_base/screen/main/tab/home/w_toss_app_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
 
 import '../../../dialog/d_color_bottom.dart';
 import '../../../dialog/d_confirm.dart';
@@ -65,7 +63,7 @@ class HomeFragment extends StatelessWidget {
           ),
           const TossAppBar(),
         ],
-      ),
+      ).animate().slideY(duration: 1000.ms).fadeIn(),
     );
   }
 

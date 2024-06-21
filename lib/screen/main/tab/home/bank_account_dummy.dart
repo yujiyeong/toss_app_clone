@@ -33,8 +33,16 @@ final bankAccountKakao = BankAccount(
 final List<BankAccount> bankAccountsList = [
   bankAccountShinhan,
   bankAccountShinhan2,
+  bankAccountToss,
+  bankAccountKakao,
   bankAccountShinhan3,
   bankAccountToss,
+  bankAccountKakao,
+  bankAccountToss,
+  bankAccountShinhan2,
+  bankAccountKakao,
+  bankAccountToss,
+  bankAccountShinhan3,
   bankAccountKakao,
 ];
 
