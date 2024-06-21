@@ -13,4 +13,5 @@ class Prefs {
       RxPreferenceItem<double, RxDouble>('sliderPosition', 0.0);
   static final birthday =
       RxnPreferenceItem<DateTime, Rxn<DateTime>>('birthday');
+  static final number  = RxPreferenceItem<int, RxInt>('number', 0);
 }
